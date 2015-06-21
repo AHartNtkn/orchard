@@ -11,7 +11,7 @@ unmanagedJars in Compile := {
 // excludeFilter in unmanagedSources ~= { _ || }
 
 unmanagedJars in Compile += Attributed.blank(
-    file(scala.util.Properties.javaHome) / "lib" / "jfxrt.jar")
+    file(scala.util.Properties.javaHome) / "lib" / "ext" / "jfxrt.jar")
 
 scalacOptions += "-feature"
 
